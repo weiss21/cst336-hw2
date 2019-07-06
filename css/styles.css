@@ -1,0 +1,23 @@
+body {
+  background-color: #0099CC;
+}
+
+
+
+.questions {
+  text-align: left;
+  padding-left: 115px;
+  padding-right: 115px;
+  background-color: #F0F0F0;
+
+}
+
+
+.button {
+  background-color: yellowgreen;
+  padding-right: 100px;
+  height: 100px;
+  width: 100px;
+  border-radius: 25px;
+
+}
