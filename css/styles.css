@@ -16,8 +16,8 @@ body{
     font-size: 1.5em;
     font-weight: bolder;
     word-break: break-all;
-    width:100px;
-    height:150px;
+    width:300px;
+    height:auto;
     border : 2px solid lightgrey;
     text-align: center;
     cursor: pointer;
