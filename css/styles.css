@@ -1,23 +1,25 @@
-body {
-  background-color: #0099CC;
+body{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #333;
 }
-
-
-
-.questions {
-  text-align: left;
-  padding-left: 115px;
-  padding-right: 115px;
-  background-color: #F0F0F0;
-
+.question{
+    font-weight: 600;
 }
-
-
-.button {
-  background-color: yellowgreen;
-  padding-right: 100px;
-  height: 100px;
-  width: 100px;
-  border-radius: 25px;
-
+.answers {
+    margin-bottom: 20px;
+}
+#submit{
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: #297;
+    color: #fff;
+    border: 0px;
+    border-radius: 3px;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+#submit:hover{
+    background-color: #3a8;
 }
