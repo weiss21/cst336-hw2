@@ -3,7 +3,11 @@ var correctAnswer2 = "B";
 var correctAnswer3 = "A";
 var correctAnswer4 = "B";
 var correctAnswer5 = "A"
+
+//listener
 $("button.checker").on("click", function(e) {
+
+  
   // Don't need e.preventDefault() because we have <button type="button">
   var selectedRadio = $("input[name='question1']:checked");
   var selectedQuestionAnswer = selectedRadio.val();
