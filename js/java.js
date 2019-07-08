@@ -3,11 +3,6 @@ const start = document.getElementById("start");
 const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
 const qImg = document.getElementById("qImg");
-const choiceA = document.getElementById("A");
-const choiceB = document.getElementById("B");
-const choiceC = document.getElementById("C");
-//const counter = document.getElementById("counter");
-//const timeGauge = document.getElementById("timeGauge");
 const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
 
@@ -17,7 +12,7 @@ let questions = [
         question : "What does HTML stand for?",
         imgSrc : "img/html.png",
         choiceA : "Hyper Text Markup Language",
-        choiceB : "How To Make Less",
+        choiceB : "How To Make Less More",
         choiceC : "Here To Make Languages",
         correct : "A"
     },{
@@ -54,9 +49,9 @@ function renderQuestion(){
     
     question.innerHTML = "<p>"+ q.question +"</p>";
     qImg.innerHTML = "<img src="+ q.imgSrc +">";
-    choiceA.innerHTML = q.choiceA;
-    choiceB.innerHTML = q.choiceB;
-    choiceC.innerHTML = q.choiceC;
+    choiceA.innerHTML = document.getElementById("A");
+    choiceB.innerHTML = document.getElementById("B");
+    choiceC.innerHTML = document.getElementById("C");
 }
 
 start.addEventListener("click",startQuiz);
@@ -67,8 +62,6 @@ function startQuiz(){
     renderQuestion();
     quiz.style.display = "block";
     renderProgress();
-   // renderCounter();
-    //TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
 }
 
 // render progress
@@ -78,28 +71,6 @@ function renderProgress(){
     }
 }
 
-// counter render
-/*
-function renderCounter(){
-    if(count <= questionTime){
-        counter.innerHTML = count;
-        timeGauge.style.width = count * gaugeUnit + "px";
-        count++
-    }else{
-        count = 0;
-        // change progress color to red
-        answerIsWrong();
-        if(runningQuestion < lastQuestion){
-            runningQuestion++;
-            renderQuestion();
-        }else{
-            // end the quiz and show the score
-            clearInterval(TIMER);
-            scoreRender();
-        }
-    }
-}
-*/
 // checkAnwer
 
 function checkAnswer(answer){
@@ -119,7 +90,6 @@ function checkAnswer(answer){
         renderQuestion();
     }else{
         // end the quiz and show the score
-        //clearInterval(TIMER);
         scoreRender();
     }
 }
