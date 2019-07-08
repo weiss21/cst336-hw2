@@ -22,8 +22,8 @@ body{
     text-align: center;
     cursor: pointer;
     position: absolute;
-    left:300px;
-    top:50px;
+    /*left:300px;
+    top:50px;*/
     color : lightgrey;
 }
 #start:hover{

@@ -6,8 +6,8 @@ const qImg = document.getElementById("qImg");
 const choiceA = document.getElementById("A");
 const choiceB = document.getElementById("B");
 const choiceC = document.getElementById("C");
-const counter = document.getElementById("counter");
-const timeGauge = document.getElementById("timeGauge");
+//const counter = document.getElementById("counter");
+//const timeGauge = document.getElementById("timeGauge");
 const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
 
@@ -42,10 +42,10 @@ let questions = [
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
 let count = 0;
-const questionTime = 10; // 10s
-const gaugeWidth = 150; // 150px
-const gaugeUnit = gaugeWidth / questionTime;
-let TIMER;
+//const questionTime = 10; // 10s
+//const gaugeWidth = 150; // 150px
+//const gaugeUnit = gaugeWidth / questionTime;
+//let TIMER;
 let score = 0;
 
 // render a question
@@ -67,8 +67,8 @@ function startQuiz(){
     renderQuestion();
     quiz.style.display = "block";
     renderProgress();
-    renderCounter();
-    TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
+   // renderCounter();
+    //TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
 }
 
 // render progress
@@ -79,7 +79,7 @@ function renderProgress(){
 }
 
 // counter render
-
+/*
 function renderCounter(){
     if(count <= questionTime){
         counter.innerHTML = count;
@@ -99,7 +99,7 @@ function renderCounter(){
         }
     }
 }
-
+*/
 // checkAnwer
 
 function checkAnswer(answer){
@@ -119,7 +119,7 @@ function checkAnswer(answer){
         renderQuestion();
     }else{
         // end the quiz and show the score
-        clearInterval(TIMER);
+        //clearInterval(TIMER);
         scoreRender();
     }
 }
