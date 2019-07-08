@@ -3,6 +3,11 @@ const start = document.getElementById("start");
 const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
 const qImg = document.getElementById("qImg");
+const choiceA = document.getElementById("A");
+const choiceB = document.getElementById("B");
+const choiceC = document.getElementById("C");
+//const counter = document.getElementById("counter");
+//const timeGauge = document.getElementById("timeGauge");
 const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
 
@@ -49,9 +54,9 @@ function renderQuestion(){
     
     question.innerHTML = "<p>"+ q.question +"</p>";
     qImg.innerHTML = "<img src="+ q.imgSrc +">";
-    choiceA.innerHTML = document.getElementById("A");
-    choiceB.innerHTML = document.getElementById("B");
-    choiceC.innerHTML = document.getElementById("C");
+    choiceA.innerHTML = q.choiceA;
+    choiceB.innerHTML = q.choiceB;
+    choiceC.innerHTML = q.choiceC;
 }
 
 start.addEventListener("click",startQuiz);
