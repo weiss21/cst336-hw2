@@ -54,6 +54,11 @@ function renderQuestion(){
 }
 
 start.addEventListener("click",startQuiz);
+$(".start").click(function(){
+  disableButton($(this));
+  console.log($(this).attr("id"));
+});
+
 
 // start quiz
 function startQuiz(){
@@ -90,6 +95,7 @@ function checkAnswer(answer){
     }else{
         // end the quiz and show the score
         scoreRender();
+        endGame();
     }
 }
 
@@ -123,7 +129,7 @@ function scoreRender(){
 
 function endGame(win) // win is boolean
 {
-  $("#letters").hide();
+  $("#start").hide();
   if (win) {
     $('#won').show();
   } else {
