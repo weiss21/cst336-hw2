@@ -95,7 +95,6 @@ function checkAnswer(answer){
     }else{
         // end the quiz and show the score
         scoreRender();
-        endGame();
     }
 }
 
@@ -125,24 +124,6 @@ function scoreRender(){
     
     scoreDiv.innerHTML = "<img src="+ img +">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
+
 }
 
-function endGame(win) // win is boolean
-{
-  $("#start").hide();
-  if (win) {
-    $('#won').show();
-  } else {
-    $('#lost').show();
-  }
-}
-
-function disableButton(btn) {
-  btn.prop("disabled", true);
-  btn.attr("class", "btn btn-danger");
-}
-
-function enableButton(btn) {
-  btn.prop("enabled", true);
-  btn.attr("class", "btn btn-success");
-}
