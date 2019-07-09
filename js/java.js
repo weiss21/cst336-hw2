@@ -21,7 +21,7 @@ let questions = [
     },{
         question : "What does CSS stand for?",
         imgSrc : "img/css.png",
-        choiceA : "Cascading Stool Samples",
+        choiceA : "Cascading Steel Samples",
         choiceB : "Cascading Style Sheets",
         choiceC : "Castle Stock Sheets",
         correct : "B"
